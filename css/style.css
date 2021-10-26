@@ -1,0 +1,495 @@
+﻿/* COMMON STYLING */
+body{ 
+	width:100%;
+	margin:0px;
+	font-size:16px;
+	color: #000000;
+	font-family: 'Lato';
+	background-color:#ffffff;
+}
+
+input{
+	font-size:16px;
+	color: #000000;
+	font-family: 'Lato';
+	background-color:#dddddd;
+}
+
+h1{
+	font-size: 32px;
+	color: #000000;
+	font-family: 'Lato';
+	line-height:0;
+	font-weight:100;
+}
+
+h2{
+	font-size: 28px;
+	color: #000000;
+	font-family: 'Lato';
+	line-height:0;
+	font-weight:100;
+}
+
+h3{
+	font-size: 24px;
+	color: #000000;
+	font-family: 'Lato';
+	line-height:0;
+	font-weight:100;
+}
+
+h4{
+	font-size: 20px;
+	color: #000000;
+	font-family: 'Lato';
+	line-height:0;
+	font-weight:100;
+}
+
+a{
+	text-decoration:none;
+	color:#ff6600;
+}
+
+a:hover{
+	text-decoration:none;
+	color:#F07D24;
+}
+
+.button1{
+	border-radius:10px;
+	cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    box-sizing: border-box;
+    outline: none;
+	background-color: #ff6600;
+	color:#fff;
+	width: 200px;
+    height: 71px;
+}
+
+.button1:hover{
+	background-color: #F07D24;
+	color:#fff;
+}
+
+/* NAVIGATION BAR STYLING */
+.naviIframe{
+	width: 100vw;
+    height: 61px;
+    border: 0px;
+	position:fixed;
+}
+
+.containerNavi{
+	float:right;
+}
+
+.containerNavi td{
+	padding:15px 10px;
+	box-sizing:border-box;
+	text-align:center;
+}
+
+.containerNavi a{
+	font-weight:300;
+	color:#000000;
+}
+
+.containerNavi a:hover{
+	color:#ff6600;
+}
+
+.loginContainer{
+	position:relative;
+	padding: 15px 0px 15px 40px!important;
+}
+
+.loginContainer i{
+	position: absolute;
+    top: 50%;
+	left:10px;
+    transform: translateY(-50%);
+}
+
+
+/* HOME PAGE STYLING */
+.homeCoverImage{
+	height: 21vw;
+	background-image: url('https://images.squarespace-cdn.com/content/v1/5d17bdee52f8d40001ca0733/1583259238918-V1CC7PODY91U6QHFGRSL/ke17ZwdGBToddI8pDm48kGwqNa-TSATgABi909OK27Z7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UQSxQa_pE67Ig1CszvlZo11NCLvqIlshiNC_JCcjnOmqOV4zqrbdg_2AqIEjj1Z3Fg/Entrada_Who+We+Are.jpg?format=2500w');
+    background-size: cover;
+}
+
+.homeBookingSec{
+    padding: 40px 67px 48px;
+	border-radius:30px;
+	width:1140px;
+	margin:auto;
+	background-color: rgba(204, 204, 204, 0.5);
+    backdrop-filter: blur(5px);
+	margin-top: -11vw;
+}
+.homeSelectBox{
+	background-color: rgba(255, 255, 255, 0.8);
+    border: 2px solid transparent;
+	width:280px;
+	border-radius:10px;
+	height: 60px;
+    padding: 7px 15px 10px;
+	box-sizing: border-box;
+	transition:0.1s;
+}
+
+.homeSelectBox.active{
+	border:2px solid #ff6600;
+	transition:0.1s;
+}
+
+.homeTextbox{
+	background-color: transparent;
+	border:none;
+}
+
+.homeTextbox:focus{
+	outline:none;
+}
+
+.homeSwapButton{
+	width:50px;
+	height:50px;
+	cursor:pointer;
+}
+
+.homeSwapButton img{
+	transform:rotate(0);
+	transition:0.4s; 
+}
+
+.homeSwapButton.active img{
+	transform:rotate(180deg);
+	transition:0.4s; 
+}
+
+.tripRadioButton{
+	width:140px;
+	text-align:left;
+	cursor:pointer;
+}
+
+.tripRadioButton.active{
+	transition:all 0.5s;
+}
+
+.radioButtonShape{
+	width:24px;
+	height:24px;
+	border-radius:50%;
+	border:1px solid #000000;
+}
+
+.active .radioButtonShape{
+	border:1px solid #ff6600;
+}
+
+.radioSelected{
+	width:14px;
+	height:14px;	
+	background-color:transparent;
+	border-radius:50%;
+	margin:auto;
+}
+
+.active .radioSelected{
+	width:14px;
+	height:14px;	
+	background-color:#ff6600;
+	border-radius:50%;
+	margin:auto;
+}
+
+.homeSelectNoPax{
+	border:none;
+	outline:none;
+	width:100%;    
+	height: 71px;
+    padding-top: 23px;
+	background-color:transparent;
+}
+
+.homeDatebox{
+	border:none;
+	outline:none;
+	width:100%;    
+    padding-top: 23px;
+	background-color:transparent;
+}
+
+.homeTextbox[type="date" i]::-webkit-calendar-picker-indicator {
+	position:absolute;
+	right: 0px;
+    height: 50px;
+    width: 50px;
+    top: -28px;
+	background-image: url(../Image/Calendar.svg);
+}
+
+.homeNewsImage{
+	width:350px;
+	text-align:center;
+}
+
+.homeCarousell :focus{
+	outline: none;
+}
+
+.homeCarousell .slick-list{
+	margin: 0 -22px;
+}
+
+.homeCarousell .slick-slide{
+	margin: 0 22px;
+}
+
+.homeCarousell.slick-slider {
+	overflow: hidden;
+}
+
+.homeCarousell .slick-next:before,.homeCarousell .slick-prev:before {
+    content: none;
+}
+
+.homeCarousell .slick-next, .homeCarousell.slick-next:focus {
+	background: url(../Image/right-arrow.svg) no-repeat 3px center,rgba(128,128,128, 0.5)!important;
+    background-size: 20px !important;
+    right: 0px;
+    z-index: 9;
+    transform: translateY(-50%);
+    top: 50%;
+    width: 25px;
+    height: 40px;
+	border-radius: 6px 0 0 6px;
+
+  }
+
+.homeCarousell .slick-next:hover, .homeCarousell .slick-next:active {
+	background: url(../Image/right-arrow.svg) no-repeat 3px center,rgba(128,128,128, 0.7)!important;
+	background-size: 20px !important;
+}
+
+.homeCarousell .slick-prev, .homeCarousell.slick-prev:focus {
+	background: url(../Image/left-arrow.svg) no-repeat 2px center,rgba(128,128,128, 0.5)!important;
+	background-size: 20px !important;
+	left: 0px;
+	z-index: 9;
+	transform: translateY(-50%);
+	top: 50%;
+	width: 25px;
+	height: 40px;
+	border-radius: 0 6px 6px 0;
+}
+
+.homeCarousell .slick-prev:hover, .homeCarousell .slick-prev:active {
+	background: url(../Image/left-arrow.svg) no-repeat 2px center,rgba(128,128,128, 0.7)!important;
+	background-size: 20px !important;
+}
+
+.fancybox-outer, .fancybox-inner, .fancybox-skin {
+	border-radius: 20px!important;
+}
+
+
+/* LOGIN PAGE STYLING */
+.loginBigContainer{
+	text-align:center;
+	padding:20px;
+	box-sizing:border-box;
+	margin:auto;
+	position: absolute;
+    top: 50%;
+	left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.loginTextboxContainer{
+	width:393px;
+	height:66px;
+	box-sizing:border-box;
+	border:1px solid #ccc;
+	border-radius:10px;
+	padding:0 12px;
+	z-index:1;
+}
+
+.loginTextboxContainer.active{
+	border:1px solid #ff6600;
+	z-index:3;
+}
+
+.loginTextbox{
+	background-color: transparent;
+	border:none;
+	width:100%;
+}
+
+.loginTextbox:focus{
+	outline:none;
+}
+
+.loginEmailSvg path{
+	fill:#cccccc;
+}
+
+.active .loginEmailSvg path{
+	fill:#ff6600;
+}
+
+.hidePasswordButton{
+	width:100%;
+	display: block;
+	background: url(../Image/Show%20Password%20Icon.svg) no-repeat center;
+	background-size: 28px;
+	cursor:pointer;
+}
+
+.hidePasswordButton.ShowText{
+	width:100%;
+	display: block;
+	background: url(../Image/Hide%20Password%20Icon.svg) no-repeat center;
+	background-size: 28px;
+	cursor:pointer;
+}
+
+.signupContainer{
+	width:820px;
+	height:500px;
+	position:relative;
+	overflow:hidden;
+}
+
+.signupInnerContainer{
+	width:1640px;
+	position:absolute;
+	left:0px;
+	top:50%;
+	transform:translateY(-50%);
+	text-align:center;
+	transition:0.3s ease;
+}
+
+.signupInnerContainer.Section2{
+	width:1640px;
+	position:absolute;
+	left:-820px;
+	top:50%;
+	transform:translateY(-50%);
+	text-align:center;
+	transition:0.3s ease;
+}
+
+.signupLeftArrowButton{
+	background: url(../Image/LEFT%20ARROW.svg) no-repeat left;
+	background-size: 28px;
+	color:#000;
+	position:absolute;
+	left:20px;
+	top:-10px;
+	padding-left: 25px;
+}
+
+.signupLeftArrowButton:hover{
+	background: url(../Image/LEFT%20ARROW%20HOVER.svg) no-repeat left;
+	background-size: 28px;
+	color:#ff6600;
+	cursor:pointer;
+}
+
+/* The container */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: -3px;
+  left: 0;
+  height: 24px;
+  width: 24px;
+  border:1px solid #000;
+  background-color: transparent;
+  border-radius: 50%;
+}
+
+.container input:checked ~ .checkmark {
+  border:1px solid #ff6600;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+ 	top: 5px;
+	left: 5px;
+	width: 14px;
+	height: 14px;
+	border-radius: 50%;
+	background: #ff6600;
+}
+
+.homeSelectCountryCode{
+	border:none;
+	outline:none;
+	width:100%;    
+	background-color:transparent;
+	position: absolute;
+	height:66px;
+	top:0px;
+	left:0px;
+	padding: 22px 10px 10px 7px;
+	-webkit-appearance: none;
+    -moz-appearance: none;
+	font-size:16px;
+}
+
+.DropdownListArrow::after{
+  content: '>';
+  font: 20px "Consolas", monospace;
+  color: #333;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  right: 21px;  
+  top: 27px;
+  padding: 0 0 2px;
+  position: absolute;
+  pointer-events: none;
+}

@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<script src="../EzBus/JavaScript/Script1.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script type="text/javascript" src="../EzBus/JavaScript/slick.min.js"></script>
+	<script type="text/javascript" src="../EzBus/css/slick.js"></script>
+	<script src="../EzBus/JavaScript/jquery.fancybox.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link href="../EzBus/css/slick.css" rel="stylesheet" type="text/css">
+	<link href="../EzBus/css/slick-theme.css" rel="stylesheet" type="text/css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Lato" rel="stylesheet">
+	<link rel="stylesheet" href="../EzBus/css/style.css">
+	<link href="../EzBus/css/jquery.fancybox.css" rel="Stylesheet" type="text/css">
+    <meta charset="utf-8" />
+    <title>EzBus | Navigation</title>
+</head>
+<body>
+	<table cellpadding="0" cellspacing="0" border="0" style="width:100%;background-color:#ffffff;height: 61px;">
+		<tr>
+			<td>	
+				<table cellpadding="0" cellspacing="0" border="0" style="width:100%;max-width:1140px;margin:auto;background-color:#ffffff;">
+					<tr>
+						<td>
+							<a href="../EzBus/Home.html" title="EzBus" alt="EzBus"><img src="../EzBus/Image/Bus Logo.svg" title="EzBus" alt="EzBus" draggable="false" style="width:140px;"></a>
+						</td>
+						<td>
+							<table cellpadding="0" cellspacing="0" border="0" class="containerNavi">
+								<tr>
+									<td>
+										<a id="homePageID" href="../EzBus/Home.html" target="_parent" title="HOME" alt="HOME">HOME</a></td> 
+									<td style="width:97px;">
+										<a href="#" id="bookingPageID"  target="_parent" title="BOOKING" alt="BOOKING">BOOKING</a></td> 
+									<td>
+										<a href="#" id="contactPageID"  target="_parent" title="CONTACT US" alt="CONTACT US">CONTACT US</a></td> 
+									<td class="loginContainer">
+										<a class="various fancybox.iframe" href="../EzBus/LoginPage.html" id="loginPageID"  target="_parent" title="LOGIN / SIGNUP" alt="LOGIN / SIGNUP">
+											<i class="material-icons" style="padding-right:5px;">account_circle</i>LOGIN / SIGNUP
+										</a></td></tr> 
+
+							</table>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+</body>
+</html>
+<script>
+	$(document).ready(function() {
+	$(".various").fancybox({
+		wrapCSS : 'details-wrapper',
+		openEffect	: 'none',
+		closeEffect	: 'none',
+		closeBtn : false,
+		padding: '0',
+		width : 820,
+		height : 450,
+		iframe : {
+		scrolling : 'auto',
+		preload   : true
+		}
+	});
+	});
+</script>

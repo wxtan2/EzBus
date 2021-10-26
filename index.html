@@ -1,0 +1,347 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<script src="../EzBus/JavaScript/Script1.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script type="text/javascript" src="../EzBus/JavaScript/slick.min.js"></script>
+		<script type="text/javascript" src="../EzBus/css/slick.js"></script>
+		<script type="text/javascript" src="../EzBus/JavaScript/jquery.fancybox.js" ></script>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<link href="../EzBus/css/slick.css" rel="stylesheet" type="text/css">
+		<link href="../EzBus/css/slick-theme.css" rel="stylesheet" type="text/css">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Lato" rel="stylesheet">
+		<link rel="stylesheet" href="../EzBus/css/style.css">
+		<link href="../EzBus/css/jquery.fancybox.css" rel="Stylesheet" type="text/css">
+		<meta charset="utf-8" />
+		<title>EzBus | HOME</title>
+		<style>
+		#homePageID{
+			color:#ff6600!important;
+		}
+		</style>
+	</head>
+
+	<body>
+		<table cellpadding="0" cellspacing="0" border="0" style="width:100%">
+			<tr>
+				<td>
+					<table cellpadding="0" cellspacing="0" border="0" style="width:100%;background-color:#ffffff;height: 61px;position:fixed;z-index:100">
+						<tr>
+							<td>
+								<table cellpadding="0" cellspacing="0" border="0" style="width:100%;max-width:1140px;margin:auto;background-color:#ffffff;">
+									<tr>
+										<td>
+											<a href="../EzBus/Home.html" title="EzBus" alt="EzBus"><img src="../EzBus/Image/Bus Logo.svg" title="EzBus" alt="EzBus" draggable="false" style="width:140px;"></a>
+										</td>
+										<td style="background-color:#ffffff;">
+											<table cellpadding="0" cellspacing="0" border="0" class="containerNavi">
+												<tr>
+													<td>
+														<a id="homePageID" href="../EzBus/Home.html" target="_parent" title="HOME" alt="HOME">HOME</a></td>
+													<td style="width:97px;">
+														<a href="#" id="bookingPageID"  target="_parent" title="BOOKING" alt="BOOKING">BOOKING</a></td>
+													<td>
+														<a href="#" id="contactPageID"  target="_parent" title="CONTACT US" alt="CONTACT US">CONTACT US</a></td>
+													<td class="loginContainer">
+														<a class="various fancybox.iframe" href="../EzBus/LoginPage.html" id="loginPageID"  target="_parent" title="LOGIN / SIGNUP" alt="LOGIN / SIGNUP">
+														<i class="material-icons" style="padding-right:5px;">account_circle</i>LOGIN / SIGNUP
+														</a>
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<table cellpadding="0" cellspacing="0" border="0" style="width:100%;">
+						<tr>
+							<td class="homeCoverImage"></td>
+						</tr>
+						<tr>
+							<td>
+								<table cellpadding="0" cellspacing="0" border="0" class="homeBookingSec">
+									<tr>
+										<td>
+											<table cellpadding="0" cellspacing="0" border="0">
+												<tr>
+													<td><h3 style="color:#fff">BUS TRIPS</h3></td>
+													<td><img src="../EzBus/Image/BUS ICON.svg" draggable="false" title="EzBus" alt="EzBus" style="width:40px;padding-left:10px;"></td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+									<tr><td>&nbsp;</td></tr>
+									<tr>
+										<td>
+											<table cellpadding="0" cellspacing="0" border="0" style="width:100%">
+												<tr>
+													<td class="homeSelectBox">
+														<table cellpadding="0" cellspacing="0" border="0" style="width:100%">
+															<tr><td>FROM</td></tr>
+															<tr><td style="height:10px;"><div></div></td></tr>
+															<tr><td>
+																	<input id="fromTextVal" class="homeTextbox" type="text" title="Select your departure point" placeholder='Try "Kuala Lumpur"'>
+																</td></tr>
+														</table>
+													</td>
+													<td style="width:35px;">&nbsp;</td>
+													<td style="width:50px;text-align:center;"><a class="homeSwapButton" id="swapTextButton" title="Swap" alt="Swap"><img draggable="false" src="../EzBus/Image/ARROW ICON.svg" title="swap" alt="swap" style="width: inherit;"></a></td>
+													<td style="width:35px;">&nbsp;</td>
+													<td class="homeSelectBox">
+														<table cellpadding="0" cellspacing="0" border="0" style="width:100%">
+															<tr><td>TO</td></tr>
+															<tr><td style="height:10px;"><div></div></td></tr>
+															<tr><td>
+																	<input id="toTextVal" class="homeTextbox" type="text" title="Select your destination point"  placeholder='Try "Batu Gajah"'>
+																</td></tr>
+														</table>
+													</td>
+													<td>&nbsp;</td>
+													<td style="width:200px;"><a class="button1" title="Search" alt="Search">SEARCH</td>
+
+												</tr>
+											</table>
+										</td>
+									</tr>
+									<tr><td style="height:30px">&nbsp;</td></tr>
+									<tr>
+										<td class="tripSelection">
+											<table border="0" cellpadding="0" cellspacing="0" style="width: 100%;">
+												<tbody>
+													<tr>
+														<td style="width:15px;">&nbsp;</td>
+														<td class="tripRadioButton active" data-name="one-way" id="One-Way">
+															<table border="0" cellpadding="0" cellspacing="0" style="width: 100%;">
+																<tr>
+																	<td class="radioButtonShape">
+																		<div class="radioSelected">
+																		</div>
+																	</td>
+																	<td style="width:10px;"></td>
+																	<td>ONE-WAY</td>
+																</tr>
+
+															</table>
+														</td>
+														<td style="width:30px;">&nbsp;</td>
+														<td class="tripRadioButton" data-name="round-trip" id="Round-Trip">
+															<table border="0" cellpadding="0" cellspacing="0" style="width: 100%;">
+																	<tr>
+																		<td class="radioButtonShape">
+																			<div class="radioSelected">
+																			</div>
+																		</td>
+																		<td style="width:10px;"></td>
+																		<td>RETURN</td>
+																	</tr>
+															</table>
+														</td>
+														<td></td>
+													</tr>
+												</tbody>
+											</table>
+										</td>
+									</tr>
+									<tr><td style="height:30px">&nbsp;</td></tr>
+									<tr>
+										<td class="tripInfo" id="one-way" style="">
+											<table cellpadding="0" cellspacing="0" border="0" style="width:100%">
+												<tr>
+													<td class="homeSelectBox">
+														<table cellpadding="0" cellspacing="0" border="0" style="width:100%">
+															<tr><td>DEPARTURE DATE</td></tr>
+															<tr><td style="height:10px;"><div></div></td></tr>
+															<tr><td style="position:relative;">
+																	<input class="homeTextbox" type="date" id="departureDate" title="Select your departure date" placeholder='Try "Kuala Lumpur"'>
+																</td></tr>
+														</table>
+													</td>
+													<td>&nbsp;</td>
+													<td class="homeSelectBox"  style="padding: 0 15px 0;width:200px;position: relative;">
+														<table cellpadding="0" cellspacing="0" border="0" style="width:100%">
+															<tr><td style="position: absolute;top: 7px;pointer-events:none;">NO OF PAX</td></tr>
+															<tr><td>
+																	<select class="homeSelectNoPax" name="Number of Person" id="noPax">
+																		<option value="1" selected>1</option>
+																		<option value="2">2</option>
+																		<option value="3">3</option>
+																		<option value="4">4</option>
+																		<option value="5">5</option>
+																	</select>
+																</td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+									<tr>
+										<td class="tripInfo" id="round-trip" style="">
+											<table cellpadding="0" cellspacing="0" border="0" style="width:100%">
+												<tr>
+													<td class="homeSelectBox">
+														<table cellpadding="0" cellspacing="0" border="0" style="width:100%">
+															<tr><td>DEPARTURE DATE</td></tr>
+															<tr><td style="height:10px;"><div></div></td></tr>
+															<tr><td style="position:relative;">
+																	<input class="homeTextbox" type="date" id="departureDate" title="Select your departure date" placeholder='Try "Kuala Lumpur"'>
+																</td></tr>
+														</table>
+													</td>
+													<td style="width:35px;">&nbsp;</td>
+													<td style="width:50px;text-align:center;">
+													<td style="width:35px;">&nbsp;</td>
+													<td class="homeSelectBox">
+														<table cellpadding="0" cellspacing="0" border="0" style="width:100%">
+															<tr><td>RETURN DATE</td></tr>
+															<tr><td style="height:10px;"><div></div></td></tr>
+															<tr><td style="position:relative;">
+																	<input class="homeTextbox" type="date" id="returnDate" title="Select your return date"  placeholder='Try "Batu Gajah"'>
+																</td></tr>
+														</table>
+													</td>
+													<td>&nbsp;</td>
+													<td class="homeSelectBox"  style="padding: 0 15px 0;width:200px;position: relative;overflow: hidden;">
+														<table cellpadding="0" cellspacing="0" border="0" style="width:100%">
+															<tr><td style="position: absolute;top: 7px;pointer-events:none;">NO OF PAX</td></tr>
+															<tr><td>
+																	<select class="homeSelectNoPax" name="Number of Person" id="noPax">
+																		<option value="1" selected>1</option>
+																		<option value="2">2</option>
+																		<option value="3">3</option>
+																		<option value="4">4</option>
+																		<option value="5">5</option>
+																	</select>
+																</td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						<tr><td style="height:75px;"></tr>
+						<tr>
+						<tr>
+							<td>
+								<table cellpadding="0" cellspacing="0" border="0" style="width:1140px;margin:auto;">
+									<tr>
+										<td>
+											<div class="homeCarousell" style="width:100%;display:table;table-layout:fixed">
+												<div><img class="homeNewsImage" src="../EzBus/Image/news1.jpg" title="Our News" />
+												</div>
+												<div><img class="homeNewsImage" src="../EzBus/Image/news2.jpg" title="Our News" />
+												</div>
+												<div><img class="homeNewsImage" src="../EzBus/Image/news3.jpg" title="Our News" />
+												</div>
+												<div><img class="homeNewsImage" src="../EzBus/Image/news4.jpg" title="Our News" />
+												</div>
+												<div><img class="homeNewsImage" src="../EzBus/Image/news5.jpg" title="Our News" />
+												</div>
+											</div>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<table cellpadding="0" cellspacing="0" border="0" style="width:100%;background-color:#333333;height: 400px;margin-top:200px;">
+						<tr>
+							<td>
+								<table cellpadding="0" cellspacing="0" border="0" style="width:1200px;margin:auto;">
+									<tr>
+										<td style="">
+
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>
+
+<script>
+$(document).ready(function(){
+	$(".homeTextbox").on("focus", function(){
+		$(this).parents(".homeSelectBox").addClass("active");
+	});
+
+	$(".homeTextbox").on("focusout", function(){
+		$(this).parents(".homeSelectBox").removeClass("active");
+	});
+
+	$(".homeSelectNoPax").on("focus", function(){
+		$(this).parents(".homeSelectBox").addClass("active");
+	});
+
+	$(".homeSelectNoPax").on("focusout", function(){
+		$(this).parents(".homeSelectBox").removeClass("active");
+	});
+
+
+	$("#swapTextButton").on('click',function(){
+		if($(this).hasClass("active"))
+			$(this).removeClass("active");
+		else
+			$(this).addClass("active");
+		var replaceVal = $('#fromTextVal').val();
+		$('#fromTextVal').val($('#toTextVal').val());
+		$('#toTextVal').val(replaceVal);
+	});
+
+    $(".tripInfo:not(#one-way)").hide();
+    $(".tripRadioButton").on("click", function(){
+		$(".tripSelection").find(".tripRadioButton").removeClass("active");
+		$(this).addClass("active");
+		var obj = $(this).attr("data-name");
+		$(".tripInfo").hide();
+		$("#" + obj).show();
+    });
+
+
+	$(".homeSelectBox").on("click", function(){
+		$(this).find(".homeTextbox").focus();
+	});
+
+	$('.homeCarousell').slick({
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		autoplay: true,
+		autoplaySpeed: 1800,
+    });
+
+	$(".various").fancybox({
+		wrapCSS : 'details-wrapper',
+		openEffect	: 'none',
+		closeEffect	: 'none',
+		closeBtn : false,
+		padding: '0',
+		width : 820,
+		height : 500,
+		iframe : {
+		scrolling : 'auto',
+		preload   : true
+		}
+	});
+
+});
+  </script>

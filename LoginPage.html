@@ -1,0 +1,125 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<script src="../EzBus/JavaScript/Script1.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script type="text/javascript" src="../EzBus/JavaScript/slick.min.js"></script>
+	<script type="text/javascript" src="../EzBus/css/slick.js"></script>
+	<script src="../EzBus/JavaScript/jquery.fancybox.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link href="../EzBus/css/slick.css" rel="stylesheet" type="text/css">
+	<link href="../EzBus/css/slick-theme.css" rel="stylesheet" type="text/css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Lato" rel="stylesheet">
+	<link rel="stylesheet" href="../EzBus/css/style.css">
+	<link href="../EzBus/css/jquery.fancybox.css" rel="Stylesheet" type="text/css">
+    <meta charset="utf-8" />
+    <title>EzBus | LOGIN</title>
+</head>
+<body>
+	<table cellpadding="0" cellspacing="0" border="0" class="loginBigContainer">
+		<tr>
+			<td><h4>LOGIN</h4>
+			</td>
+		</tr>
+		<tr>
+			<td class="loginTextboxContainer">	
+				<table cellpadding="0" cellspacing="0" border="0" style="width:100%;">
+					<tr>
+						<td style="width:28px;padding-right:30px;">
+							<svg class="loginEmailSvg" style="position: relative;top: 1px;" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M27.9792 6.0319C27.9792 5.9999 28.0012 5.96876 27.9997 5.93713L19.4551 14.1704L27.9895 22.1406C27.9945 22.0836 27.9792 22.0262 27.9792 21.9681V6.0319Z" />
+								<path d="M18.1509 15.4374L14.6627 18.7935C14.4862 18.9633 14.2583 19.0485 14.0302 19.0485C13.8068 19.0485 13.5835 18.967 13.4082 18.8036L9.92949 15.562L1.33936 23.8419C1.54823 23.917 1.77243 23.9753 2.00721 23.9753H26.0532C26.4019 23.9753 26.7289 23.8691 27.0132 23.7107L18.1509 15.4374Z"/>
+								<path d="M14.0203 16.8796L27.0606 4.31802C26.7654 4.14248 26.4217 4.02472 26.0534 4.02472H2.00735C1.52769 4.02472 1.08817 4.21096 0.74585 4.49502L14.0203 16.8796Z" />
+								<path d="M0 6.33801V21.968C0 22.1474 0.0412391 22.3204 0.086006 22.4857L8.56958 14.3163L0 6.33801Z" fill="#CCCCCC"/>
+							</svg>
+						</td>
+						<td>
+							<input class="loginTextbox" type="text" id="loginEmail" title="Email" placeholder='Email'>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr><td style="height:30px"><div></div></td></tr>
+		<tr>
+			<td class="loginTextboxContainer">	
+				<table cellpadding="0" cellspacing="0" border="0" style="width:100%;">
+					<tr>
+						<td style="width:28px;padding-right:30px;">
+							<svg class="loginEmailSvg" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<g clip-path="url(#clip0)">
+								<path d="M26.8221 1.17414C25.2576 -0.380598 22.7118 -0.380598 21.1473 1.17414C20.7551 1.56388 20.4548 2.02036 20.2551 2.5174C18.6822 1.30112 16.401 1.40979 14.9561 2.84564C14.1965 3.60047 13.7782 4.60444 13.7783 5.67258C13.7783 6.74078 14.1966 7.74469 14.9561 8.49946C15.3726 8.91341 15.8591 9.21602 16.3777 9.40952L0.241912 25.4725C-0.0806465 25.7932 -0.0806465 26.3151 0.241967 26.6357L1.31191 27.7535C1.6319 28.0715 2.14867 28.0713 2.46834 27.753L4.95123 25.1732L6.99716 27.2064C7.1571 27.3653 7.36613 27.4447 7.5751 27.4447C7.78577 27.4447 7.99649 27.364 8.1567 27.2027C8.47593 26.8815 8.47429 26.3623 8.1531 26.0432L7.5892 25.4828L8.59897 24.4793C8.60083 24.4812 8.60236 24.4832 8.60422 24.4851L9.17543 25.0527C9.33537 25.2117 9.54434 25.291 9.75337 25.291C9.96409 25.291 10.1748 25.2103 10.335 25.049C10.6542 24.7279 10.6526 24.2087 10.3314 23.8895L8.28718 21.8581L18.5804 11.6558C18.78 12.1457 19.078 12.5955 19.4653 12.9803C20.2475 13.7576 21.2751 14.1463 22.3027 14.1463C23.3302 14.1463 24.3578 13.7576 25.1401 12.9803C25.8997 12.2255 26.318 11.2215 26.318 10.1534C26.318 9.25625 26.0219 8.40512 25.4775 7.70813C25.9672 7.51402 26.4263 7.22136 26.8222 6.82796C27.5818 6.07314 28 5.06917 28 4.00103C28 2.93294 27.5817 1.92897 26.8221 1.17414ZM15.4181 5.67263C15.418 5.04441 15.6645 4.45357 16.112 4.00884C16.5756 3.5481 17.1845 3.31776 17.7936 3.31776C18.4024 3.31776 19.0115 3.54815 19.4751 4.00879C19.9225 4.45352 20.169 5.04435 20.169 5.67258C20.1689 6.30075 19.9225 6.89164 19.4751 7.33632C18.5478 8.25769 17.0392 8.25769 16.112 7.33632C15.6645 6.8917 15.4181 6.30081 15.4181 5.67263ZM23.9842 11.8173C23.0569 12.7386 21.5483 12.7386 20.6211 11.8173C20.1736 11.3725 19.9272 10.7817 19.9272 10.1535C19.9272 9.5253 20.1736 8.93441 20.6211 8.48973C21.0847 8.02905 21.6937 7.7987 22.3027 7.7987C22.9116 7.7987 23.5206 8.02905 23.9842 8.48973C24.4316 8.93441 24.6781 9.5253 24.6781 10.1535C24.6781 10.7816 24.4316 11.3725 23.9842 11.8173ZM25.6662 5.66482C24.739 6.58619 23.2304 6.58619 22.3031 5.66482C21.8557 5.22009 21.6092 4.62925 21.6092 4.00108C21.6092 3.37291 21.8557 2.78202 22.3031 2.33729C22.7668 1.87655 23.3757 1.64626 23.9847 1.64626C24.5936 1.64626 25.2027 1.87666 25.6663 2.33729C26.1137 2.78202 26.3602 3.37285 26.3602 4.00108C26.3601 4.62925 26.1137 5.22015 25.6662 5.66482Z" />
+								</g>
+								<defs>
+								<clipPath id="clip0">
+								<rect width="28" height="28" fill="white"/>
+								</clipPath>
+								</defs>
+							</svg>
+						</td>
+						<td>
+							<input class="loginTextbox" type="password" id="loginPassword" title="Password" placeholder='Password'>
+						</td>
+						<td style="width:28px;padding-right:10px;">
+							<a id="toggle" class="hidePasswordButton ShowText">&nbsp;</a>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr><td style="height:55px"><a href="../EzBus/ForgotPassword.html" alt="Forgot Password" title="Forgot Password">Forgot Password?</a></td></tr>
+		<tr>
+			<td>
+				<a class="button1" href="#" style="width:393px;height:66px" title="Login" alt="Login">LOG IN</a>
+			</td>
+		</tr>
+		<tr><td style="height:55px">Don't have an account yet? &nbsp;<a href="../EzBus/SignUpPage.html" alt="Sign up now" title="Sign up now">Sign up now</a></td></tr>
+	</table>
+</body>
+</html>
+<script>
+$(document).ready(function(){
+	$(".loginTextbox").on("focus", function(){
+		$(this).parents(".loginTextboxContainer").addClass("active");
+	});
+
+	$(".loginTextbox").on("focusout", function(){
+		$(this).parents(".loginTextboxContainer").removeClass("active");
+	});
+
+	$(".loginTextboxContainer").on("click", function(){
+		$(this).find(".loginTextbox").focus();
+	});
+
+	$("#toggle").click(function(){
+		if($(this).hasClass("ShowText")){
+		// Changing type attribute
+		$(this).removeClass("ShowText");
+		$("#loginPassword").attr("type","text");
+		}
+		else
+		{
+		// Changing type attribute
+		$(this).addClass("ShowText");
+		$("#loginPassword").attr("type","password");
+		}
+	});
+
+	$(".signUp").fancybox({
+		wrapCSS : 'details-wrapper',
+		openEffect	: 'none',
+		closeEffect	: 'none',
+		closeBtn : false,
+		padding: '0',
+		width : 820,
+		height : 505,
+		iframe : {
+		scrolling : 'auto',
+		preload   : true
+		}
+	});
+
+});
+  </script>
